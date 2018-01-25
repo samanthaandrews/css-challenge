@@ -6,17 +6,65 @@
 * Create your own custom CSS rules below. Have fun!
 ******************************************************/
 html, body {
-	margin: 0;
+	margin: auto;
 	box-sizing: border-box;
+
 }
 
-.container {
+h1 {
+	color: chartreuse;
+}
+
+.welcome {
 	margin: 0 auto;
 	padding: 0 2rem;
+
 }
 
 .clearfix {
 	clear: both;
+}
+
+.professional-skills {
+	box-sizing: border-box;
+	background-color: white;
+	width: 85%;
+	margin: auto;
+
+}
+
+table {
+	width: 90%;
+}
+
+th, tr {
+	border: 1px solid white;
+	background-color: rgb(45,45,45);
+	width: 35%;
+	color: rgb(18,211,13);
+
+}
+
+.contact-me {
+	box-sizing: border-box;
+	background-color: rgb(45,45,45);
+	width: 85%;
+	margin: auto;
+}
+
+.form-wrapper {
+	background-color: rgb(2,89,2);
+	width: 85%;
+	margin: auto;
+}
+
+.footer {
+	box-sizing: border-box;
+	text-align: center;
+	color: white;
+	background-color: black;
+	width: 85%;
+	margin: auto;
 }
 
 /* create a responsive container */
