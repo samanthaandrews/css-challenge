@@ -6,94 +6,18 @@
 * Create your own custom CSS rules below. Have fun!
 ******************************************************/
 html, body {
-	margin: auto;
+	margin: 0;
 	box-sizing: border-box;
-	font-family: Arial
-
+	font-family: monospace;
 }
 
-.welcome {
-	box-sizing: border-box;
-	background-color: rgb(45,45,45);
-	width: 85%;
-	margin: auto;
-	color: chartreuse;
-	padding: 15px;
+.container {
+	margin: 0 auto;
+	padding: 0 2rem;
 }
 
-.instructions {
-	box-sizing: border-box;
-	background-color: white;
-	width: 85%;
-	margin: auto;
-	padding: 15px;
-	border: 4px solid black;
-}
-
-.about-me {
-	box-sizing: border-box;
-	background-color: blue;
-	width: 85%;
-	margin: auto;
-	color: white;
-	padding: 15px;
-}
-
-.grooming {
-	color: yellow;
-}
-
-.professional-skills {
-	box-sizing: border-box;
-	background-color: white;
-	width: 85%;
-	margin: auto;
-	padding: 30px;
-
-}
-
-table {
-	box-sizing: border-box;
-	width: 90%;
-}
-
-th, tr {
-	border: 1px solid white;
-	background-color: rgb(45,45,45);
-	width: 35%;
-	color: rgb(18,211,13);
-
-}
-
-.contact-me {
-	box-sizing: border-box;
-	background-color: rgb(45,45,45);
-	width: 85%;
-	margin: auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-.form-wrapper {
-	box-sizing: border-box;
-	background-color: rgb(2,89,2);
-	width: 85%;
-	margin: auto;
-}
-
-.contact-form {
-	box-sizing: border-box;
-	padding: 15px;
-}
-
-.footer {
-	box-sizing: border-box;
-	text-align: center;
-	color: white;
-	font-family: Arial;
-	background-color: black;
-	width: 85%;
-	margin: auto;
+.clearfix {
+	clear: both;
 }
 
 /* create a responsive container */
@@ -138,3 +62,111 @@ body { width: 100%;}
 * * Pseudo Classes
 * * Attribute Selectors
 ******************************************************/
+
+header {
+	width: 100%;
+	background-color: rgb(51,51,51);
+	color: chartreuse;
+	padding: 1em 0;
+}
+
+header h1, em {
+	display: inline;
+	margin-right: 1em;
+}
+
+img[alt*="welcome to my homepage"] {
+	display: block;
+	margin: 60px auto;
+}
+
+.instructions-wrapper {
+	display: flex;
+	margin: 50px;
+	border: 2px solid black;
+}
+
+img[alt*="captain janeway"] {
+	flex: auto;
+	max-height: 200px;
+}
+
+.instructions-content {
+	width: 70%;
+	margin: 20px;
+}
+
+.about-me {
+	color: white;
+	background-color: blue;
+	padding: 60px;
+}
+
+img[alt*="captain picard"] {
+	float: left;
+	margin: 10px;
+	max-width: 200px;
+	border: 2px solid white;
+	display: inline;
+}
+
+span {
+	color: yellow;
+	text-shadow: black;
+}
+
+section:nth-child(4){
+	padding: 60px;
+
+}
+section:nth-child(4) h2 {
+	text-align: right;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+th, td {
+	text-align: left;
+	color: chartreuse;
+	border: 1px solid white;
+	background-color: rgb(51,51,51);
+	padding: 1em;
+}
+
+section:nth-child(5) {
+	background-color: rgb(51,51,51);
+	padding: 60px;
+}
+
+.form-wrapper {
+	color: chartreuse;
+	background-color: rgb(9,99,12);
+	padding: 30px;
+}
+
+.form-wrapper label, input, textarea {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form-wrapper input, textarea {
+	width: 30%;
+}
+
+.form-wrapper button {
+	background-color: chartreuse;
+	color: darkblue;
+	border: none;
+	padding: 5px 15px;
+}
+
+footer {
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
