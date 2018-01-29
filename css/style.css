@@ -64,10 +64,10 @@ body { width: 100%;}
 ******************************************************/
 
 header {
-	width: 100%;
 	background-color: rgb(51,51,51);
 	color: chartreuse;
-	padding: 1em 0;
+	padding: 15px;
+	width: 100%;
 }
 
 header h1, em {
@@ -82,8 +82,10 @@ img[alt*="welcome to my homepage"] {
 
 .instructions-wrapper {
 	display: flex;
-	margin: 50px;
+	margin-bottom: 25px;
 	border: 2px solid black;
+	width: 100%;
+	padding: 15px;
 }
 
 img[alt*="captain janeway"] {
@@ -99,7 +101,8 @@ img[alt*="captain janeway"] {
 .about-me {
 	color: white;
 	background-color: blue;
-	padding: 60px;
+	width: 100%;
+	padding: 15px;
 }
 
 img[alt*="captain picard"] {
@@ -116,7 +119,8 @@ span {
 }
 
 section:nth-child(4){
-	padding: 60px;
+	padding: 15px;
+	width: 100%;
 
 }
 section:nth-child(4) h2 {
@@ -138,13 +142,15 @@ th, td {
 
 section:nth-child(5) {
 	background-color: rgb(51,51,51);
-	padding: 60px;
+	padding: 15px;
+	width: 100%;
 }
 
 .form-wrapper {
 	color: chartreuse;
 	background-color: rgb(9,99,12);
-	padding: 30px;
+	height: 70%;
+	padding: 10px;
 }
 
 .form-wrapper label, input, textarea {
